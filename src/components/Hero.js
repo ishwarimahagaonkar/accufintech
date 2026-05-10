@@ -21,7 +21,7 @@ function Hero() {
         opacity: `${Math.max(1 - scrollY * 0.0015, 0)}`     // ✅ stop at 0
       }}
     >
-      <div className="hero-container">
+      <div id="hero-container" className="hero-container">
         
         <div className="hero-content">
           <h1 className="hero-title">

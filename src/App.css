@@ -474,3 +474,189 @@ html {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+/* ================= MOBILE FIX ================= */
+
+@media screen and (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  /* ================= NAVBAR ================= */
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: row;      /* 🔥 horizontal layout */
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+  }
+
+  /* hide nav links */
+  .nav-links {
+    display: none !important;
+  }
+
+  /* logo + name grouped horizontally */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+
+  .logo span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* button */
+  .btn {
+    padding: 8px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+  /* ================= MOBILE ================= */
+@media screen and (max-width: 768px) {
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    padding: 120px 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    overflow: hidden;
+  }
+
+  .hero-title {
+    margin-top: 100px;
+    font-size: 42px;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    margin-top: 40px; /* FIXED (was 200px → too large) */
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .hero-trust {
+    align-items: flex-start;
+  }
+  hero.container{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  /* IMAGE */
+  .hero-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+  /* ABOUT */
+  .about{
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .about-stats{
+    gap: 15px;
+  }
+
+  .stat-card{
+    width: 160px;
+  }
+
+  /* SERVICES */
+  /* ================= SERVICES SECTION ================= */
+  .services {
+    padding: 60px 20px;
+  }
+
+  /* horizontal scroll container */
+  .service-container {
+    display: flex;              /* 🔥 key fix */
+    gap: 15px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;  /* smooth snapping */
+    -webkit-overflow-scrolling: touch;
+
+    padding-bottom: 10px;
+  }
+
+  /* hide scrollbar (clean UI) */
+  .service-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* service cards */
+  .service-card {
+    min-width: 100%;
+    flex: 0 0 auto;
+    height: 180px;
+    scroll-snap-align: start;   /* snapping effect */
+
+    border-radius: 12px;
+  }
+
+
+}  
+
+
+
+/* SMALL MOBILE */
+@media screen and (max-width: 480px){
+
+  .hero-title{
+    font-size: 34px;
+  }
+
+  .hero-subtitle{
+    font-size: 15px;
+  }
+
+  .hero-image img{
+    width: 220px;
+  }
+
+  .nav-links{
+    gap: 10px;
+  }
+
+  .nav-links a{
+    font-size: 13px;
+  }
+
+}
