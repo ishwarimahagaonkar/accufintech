@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/accufintech/static/css/main.b0b819be.css",
+    "main.js": "/accufintech/static/js/main.ad3269ad.js",
+    "static/media/background.png": "/accufintech/static/media/background.58a8871ab0254ae143b1.png",
+    "static/media/logo.png": "/accufintech/static/media/logo.c1684a3f7b00dadbe98d.png",
+    "index.html": "/accufintech/index.html",
+    "main.b0b819be.css.map": "/accufintech/static/css/main.b0b819be.css.map",
+    "main.ad3269ad.js.map": "/accufintech/static/js/main.ad3269ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0b819be.css",
+    "static/js/main.ad3269ad.js"
+  ]
+}
